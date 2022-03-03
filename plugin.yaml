@@ -1,0 +1,18 @@
+name: sns-env-ts-plugin
+description: Plugin to create a SNS Topic.
+types:
+  - env
+inputs:
+  - label: "Project name (e.g. my-awesome-app):"
+    type: text
+    name: project_name
+  - label: "Topic name (e.g. my-topic):"
+    type: text
+    name: topic_name
+  - label: "Is the topic an Amazon SNS FIFO queue? (default: true):"
+    type: bool
+    name: topic_fifo
+    default: true
+computedInputs:
+  app_class_name: "{{ inputs.project_name|replace('_', '-')|replace(' ', '-')|title|replace('-', '') }}"
+  project_name: "{{ inputs.project_name|replace('_', '-')|replace(' ', '-')|lower }}"

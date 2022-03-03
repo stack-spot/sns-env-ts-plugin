@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@stackspot/cdk-env-sns": "^0.1.0"
+  }
+}
