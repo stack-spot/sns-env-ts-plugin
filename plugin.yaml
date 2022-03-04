@@ -9,7 +9,7 @@ inputs:
   - label: "Topic name (e.g. my-topic):"
     type: text
     name: topic_name
-  - label: "Is the topic an Amazon SNS FIFO queue? (default: true):"
+  - label: "Is the topic an Amazon SNS FIFO queue? (default: Yes):"
     type: bool
     name: topic_fifo
     default: true

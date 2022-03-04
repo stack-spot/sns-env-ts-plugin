@@ -8,7 +8,7 @@ class {{ computed_inputs.app_class_name }}Stack extends Stack {
 
     const snsTopic = new SnsAppJsiiComponent(this, '{{ computed_inputs.app_class_name }}Topic', {
       displayName: '{{ inputs.topic_name }}',
-      fifo: '{{ inputs.topic_fifo }}',
+      fifo: {% if inputs.topic_fifo %}true{% else %}false{% endif %},
       topicName: '{{ inputs.topic_name }}',
       contentBasedDeduplication: false,
     });
