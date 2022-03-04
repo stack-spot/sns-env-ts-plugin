@@ -3,7 +3,7 @@
 [![version][badge-version]][releases]
 [![license][badge-license]][license]
 
-Plugin to create a SNS Topic.
+Plugin to create an SNS Topic.
 
 ## Development
 

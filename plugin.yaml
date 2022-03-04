@@ -1,5 +1,5 @@
 name: sns-env-ts-plugin
-description: Plugin to create a SNS Topic.
+description: Plugin to create an SNS Topic.
 types:
   - env
 inputs:
